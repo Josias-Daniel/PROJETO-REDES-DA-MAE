@@ -1,0 +1,139 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rosi | Conexões & Inspiração</title>
+    <!-- Tailwind CSS para estilização rápida e responsiva -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome para ícones de redes sociais -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts para tipografia elegante -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background: linear-gradient(135deg, #fdf6f0 0%, #f5e6da 100%);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.65);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+        }
+    </style>
+</head>
+<body class="min-h-screen font-sans text-gray-800 flex flex-col items-center justify-between p-4 md:p-8">
+
+    <!-- Container Principal -->
+    <main class="w-full max-w-md my-auto flex flex-col items-center">
+        
+        <!-- Cartão de Perfil -->
+        <div class="w-full glass-card rounded-3xl p-6 md:p-8 shadow-xl shadow-rose-950/5 text-center transition-all duration-300 hover:shadow-2xl hover:shadow-rose-950/10 mb-6">
+            
+            <!-- Foto de Perfil / Avatar SVG Personalizado -->
+            <div class="relative w-32 h-32 mx-auto mb-6 group">
+                <div class="absolute inset-0 bg-gradient-to-tr from-rose-400 to-amber-200 rounded-full blur-md opacity-70 group-hover:opacity-90 transition-opacity duration-300"></div>
+                <!-- 
+                     DICA: Ao publicar no GitHub, pode colocar a foto na mesma pasta com o nome "foto.jpg" 
+                     e substituir o <svg> abaixo por: <img src="foto.jpg" alt="Rosi" class="relative w-full h-full object-cover rounded-full border-4 border-white shadow-inner">
+                -->
+                <div class="relative w-full h-full bg-rose-100 rounded-full border-4 border-white shadow-md flex items-center justify-center overflow-hidden">
+                    <svg class="w-20 h-20 text-rose-400/80" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16s0-2-8-4z"/>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Nome e Título -->
+            <h1 class="font-serif text-3xl font-semibold text-gray-900 tracking-tight mb-1">Rosi</h1>
+            <p class="text-xs uppercase tracking-widest text-rose-600 font-semibold mb-4">Desenvolvimento • Inspiração • Bem-Estar</p>
+            
+            <!-- Biografia Curta -->
+            <p class="text-sm leading-relaxed text-gray-600 mb-6 font-light">
+                Partilho reflexões, dicas práticas e doses diárias de inspiração para transformar a sua rotina, elevar a sua autoconfiança e alcançar a sua melhor versão.
+            </p>
+
+            <!-- Seção de Destaque Interativo -->
+            <div class="border-t border-gray-200/50 pt-5 text-left">
+                <h3 class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-3 text-center">Como posso ajudar-te:</h3>
+                <div class="grid grid-cols-2 gap-2 text-xs">
+                    <div class="p-3 bg-white/40 rounded-xl border border-white/20 hover:bg-white/60 transition-all duration-200 cursor-default">
+                        <span class="block font-medium text-gray-900 mb-1"><i class="fa-solid fa-seedling text-rose-500 mr-1.5"></i> Autocuidado</span>
+                        Práticas simples para equilibrar a sua mente e o seu corpo.
+                    </div>
+                    <div class="p-3 bg-white/40 rounded-xl border border-white/20 hover:bg-white/60 transition-all duration-200 cursor-default">
+                        <span class="block font-medium text-gray-900 mb-1"><i class="fa-solid fa-lightbulb text-amber-500 mr-1.5"></i> Inspiração</span>
+                        Pílulas de sabedoria e reflexões ("Rosisms") diárias.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Links Rápidos / Botões de Ação -->
+        <div class="w-full flex flex-col gap-4">
+            
+            <!-- Link do Instagram -->
+            <a href="https://www.instagram.com/rosisms?igsh=MWozNjA3NGRjbDcydA==" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="w-full flex items-center justify-between p-4 bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045] hover:from-[#954dbd] hover:to-[#fdbd5e] text-white rounded-2xl shadow-lg transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl font-medium tracking-wide">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-white/20 rounded-xl flex items-center justify-center">
+                        <i class="fa-brands fa-instagram text-xl"></i>
+                    </div>
+                    <div class="text-left">
+                        <span class="block text-xs text-white/80 uppercase tracking-widest font-semibold">Seguir no Instagram</span>
+                        <span class="text-sm font-semibold">@rosisms</span>
+                    </div>
+                </div>
+                <i class="fa-solid fa-arrow-right text-sm opacity-80 mr-1"></i>
+            </a>
+
+            <!-- Link do WhatsApp -->
+            <a href="https://wa.link/jnneok" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="w-full flex items-center justify-between p-4 bg-emerald-500 hover:bg-emerald-400 text-white rounded-2xl shadow-lg transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl font-medium tracking-wide">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-white/20 rounded-xl flex items-center justify-center">
+                        <i class="fa-brands fa-whatsapp text-2xl"></i>
+                    </div>
+                    <div class="text-left">
+                        <span class="block text-xs text-white/80 uppercase tracking-widest font-semibold">Agendar uma conversa</span>
+                        <span class="text-sm font-semibold">Conversar no WhatsApp</span>
+                    </div>
+                </div>
+                <i class="fa-solid fa-chevron-right text-sm opacity-80 mr-1"></i>
+            </a>
+
+        </div>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="mt-8 text-center text-xs text-gray-500/80 font-light">
+        <p>© 2026 Rosi. Todos os direitos reservados.</p>
+        <p class="mt-1">Criado com carinho para inspirar.</p>
+    </footer>
+
+</body>
+</html>
+
+```
